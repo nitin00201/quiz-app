@@ -36,11 +36,11 @@ API Endpoints
 
 *   Endpoint: ```POST /api/quiz/start```
 
-*   Query Parameter:userId(Long)
+*   Query Parameter: userId(Long)
 
-*   Response:QuizSession object
+*   Response: QuizSession object
 
-*   Description:Initiates a new quiz session for a user
+*   Description: Initiates a new quiz session for a user
 
 
 
@@ -49,9 +49,9 @@ API Endpoints
 
 *   Endpoint: ```GET /api/quiz/question ```
 
-*   Response:Question object with multiple-choice options
+*   Response: Question object with multiple-choice options
 
-*   Description:Retrieves a random question from the database
+*   Description: Retrieves a random question from the database
 
 
 
@@ -68,9 +68,9 @@ API Endpoints
 
     *   questionId(Long)
 
-*   Response:Updated QuizSession object
+*   Response: Updated QuizSession object
 
-*   Description:Submits user's answer and updates quiz session statistics
+*   Description: Submits user's answer and updates quiz session statistics
 
 
 
@@ -79,11 +79,11 @@ API Endpoints
 
 *   Endpoint: ```GET /api/quiz/session/{sessionId}```
 
-*   Path Parameter:sessionId(Long)
+*   Path Parameter: sessionId(Long)
 
-*   Response:QuizSession object
+*   Response: QuizSession object
 
-*   Description:Retrieves detailed statistics of a quiz session
+*   Description: Retrieves detailed statistics of a quiz session
 
 
 
