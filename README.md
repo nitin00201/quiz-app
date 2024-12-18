@@ -22,12 +22,6 @@ This is a Spring Boot-based Quiz Application providing RESTful API endpoints for
 - Lombok
 
 
-## API Endpoints
-1. Start Quiz: POST /api/quiz/start?userId=1
-2. Get Random Question: GET /api/quiz/question
-3. Submit Answer: POST /api/quiz/submit
-4. Get Session Details: GET /api/quiz/session/{sessionId}
-
 ## Project Setup
 
 ### Clone the Repository
@@ -40,7 +34,7 @@ API Endpoints
 
 ### 1\. Start New Quiz Session
 
-*   Endpoint:POST /api/quiz/start
+*   Endpoint: ```POST /api/quiz/start```
 
 *   Query Parameter:userId(Long)
 
@@ -49,24 +43,22 @@ API Endpoints
 *   Description:Initiates a new quiz session for a user
 
 
-**Example Request:**
 
 
 ### 2\. Get Random Question
 
-*   Endpoint:GET /api/quiz/question
+*   Endpoint: ```GET /api/quiz/question ```
 
 *   Response:Question object with multiple-choice options
 
 *   Description:Retrieves a random question from the database
 
 
-**Example Request:**
 
 
 ### 3\. Submit Answer
 
-*   Endpoint:POST /api/quiz/submit
+*   Endpoint: ```POST /api/quiz/submit```
 
 *   **Query Parameters:**
 
@@ -81,12 +73,11 @@ API Endpoints
 *   Description:Submits user's answer and updates quiz session statistics
 
 
-**Example Request:**
 
 
 ### 4\. Get Quiz Session Details
 
-*   Endpoint:GET /api/quiz/session/{sessionId}
+*   Endpoint: ```GET /api/quiz/session/{sessionId}```
 
 *   Path Parameter:sessionId(Long)
 
@@ -95,21 +86,20 @@ API Endpoints
 *   Description:Retrieves detailed statistics of a quiz session
 
 
-**Example Request:**
 
 
 Database Configuration
 ----------------------
 
-*   Type:H2 In-Memory Database
+*   **Type:** H2 In-Memory Database
 
-*   Console Access:
+*   **Console Access:**
 ```bash
 http://localhost:8080/h2-console
 ```
 
-*   JDBC URL:jdbc:h2:mem:quizdb
+*   **JDBC URL:** ```jdbc:h2:mem:quizdb```
 
-*   Username:sa
+*   **Username:** ``sa``
 
 *   Password:
